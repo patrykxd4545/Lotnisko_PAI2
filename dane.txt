@@ -43,11 +43,11 @@ Java Spring + Angular + MySql
 
 - Albert Smoliński (albertcisc98@gmail.com)
 
-- Wojtek Dominek (wojtekdom7@gmail.com) 
+- Wojtek Dominek (wojtekdom7@gmail.com) - Tworzenie klienta
 
 - Patryk Niziołek (niziolek900@gmail.com)
 
-- Dawid Milczarek (dawmilczarek@gmail.com)
+- Dawid Milczarek (dawmilczarek@gmail.com) - Tworzenie administratora
 
 #Realizowane tematy z przedmiotów:
 - Dawid Milczarek: Podstawy inżynierii programowania - Warsztat samochodowy
