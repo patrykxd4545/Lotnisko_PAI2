@@ -41,11 +41,11 @@ Java Spring + Angular + MySql
 
 #Skład zespołu:
 
-- Albert Smoliński (albertcisc98@gmail.com)
+- Albert Smoliński (albertcisc98@gmail.com) - Tworzenie kontrolera ruchu lotniczego
 
 - Wojtek Dominek (wojtekdom7@gmail.com) - Tworzenie klienta
 
-- Patryk Niziołek (niziolek900@gmail.com)
+- Patryk Niziołek (niziolek900@gmail.com) - Tworzenie celnika
 
 - Dawid Milczarek (dawmilczarek@gmail.com) - Tworzenie administratora
 
