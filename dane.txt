@@ -43,7 +43,7 @@ Java Spring + Angular + MySql
 
 - Albert Smoliński (albertcisc98@gmail.com) - Tworzenie kontrolera ruchu lotniczego
 
-- Wojtek Dominek (wojtekdom7@gmail.com) - Tworzenie klienta
+- Wojtek Dominek (wojtekdom7@gmail.com) - Tworzenie klienta/ pasażera
 
 - Patryk Niziołek (niziolek900@gmail.com) - Tworzenie celnika
 
