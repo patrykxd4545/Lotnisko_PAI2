@@ -1,0 +1,58 @@
+#Temat projektu:
+
+Aplikacja wspomagająca zarządzanie lotniskiem
+
+#Funkcjonalności systemu:
+
+-Dodawanie nowych połączeń jako administrator
+- Kupowanie biletu przez klienta
+- przeglądanie lotu przez klienta
+-Odprawa celna towarów
+-Kontrolowanie samolotów  jako kontroler
+-Odprawa bagażu
+- Dodawanie/usuwanie/modyfikowanie samolotów na lotnisku
+-Tworzenie/edytowanie pasów startowych
+-Edytowanie bramek lotniczych
+-Edytowanie harmonogramu lotów
+-Wyświetlanie harmonogramu
+
+
+#Kategorie użytkowników i ich funkcjonalności:
+
+- Klient
+* Zamawianie biletów, odprawa przed lotem, kupowanie rzeczy w sklepie bezcłowym
+
+- Kontroler ruchu lotniczego
+* Koordynowanie wszystkimi lotami, samolotami, ustalanie kolejności lotów, pilotów do danego lotu, kontrolowanie parametrów pogodowych
+
+- Celnik
+* Kontrola związana z wywozem i przywozem towarów, nadawanie towarom przeznaczenia celnego, pobór podatku akcyzowego, odprawa
+
+-Administrator
+*Tworzenie nowych lotów (połączeń lotniczych)
+*Anulowanie lotów
+*Zatrudnianie pracowników
+*Zarządzanie pracownikami
+
+
+#Wykorzystane technologie:
+
+Java Spring + Angular + MySql
+
+#Skład zespołu:
+
+- Albert Smoliński (albertcisc98@gmail.com)
+
+- Wojtek Dominek (wojtekdom7@gmail.com) 
+
+- Patryk Niziołek (niziolek900@gmail.com)
+
+- Dawid Milczarek (dawmilczarek@gmail.com)
+
+#Realizowane tematy z przedmiotów:
+- Dawid Milczarek: Podstawy inżynierii programowania - Warsztat samochodowy
+- Wojtek Dominek: Podstawy inżynierii programowania - Tworzenie tras koncertowych
+- Albert Smoliński: Podstawy inżynierii programowania - Hipermarket
+- Patryk Niziołek: Podstawy inżynierii programowania - Biuro podróży
+
+
