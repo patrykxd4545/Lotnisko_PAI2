@@ -8,4 +8,3 @@
 ![sdvsv](https://user-images.githubusercontent.com/80070821/110833660-f9a85600-829c-11eb-90b6-f4b4ed0a5278.png)
 
 
-![2](https://user-images.githubusercontent.com/65347753/110861244-2ae54e00-82be-11eb-8672-f8eeec6aff60.png)
