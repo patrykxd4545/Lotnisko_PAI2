@@ -1,2 +1,2 @@
 # Lotnisko_PAI2
-Aplikacja wspomagająca zarządzanie lotniskiem
+Aplikacja wspomagająca zarządzanie liniami lotniczymi
