@@ -1,6 +1,6 @@
 # Temat projektu:
 
-Aplikacja wspomagająca zarządzanie lotniskiem
+Aplikacja wspomagająca zarządzanie linią lotniczą
 
 ## Zakres projektu:
 
