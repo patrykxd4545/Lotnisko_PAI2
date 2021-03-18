@@ -4,13 +4,13 @@ Aplikacja wspomagająca zarządzanie lotniskiem
 
 ## Zakres projektu:
 
-
+Program wspomagąłby działanie lini lotniczych oraz ich zarządzanie. Wszystkie funkcjonalności opisaliśmy poniżej w Kategoriach użytkowników i ich funkcjonalności.
 
 
 ## Kategorie użytkowników i ich funkcjonalności:
 
 Użytkownicy:
-Spedytor
+1. Spedytor
   - Tworzenie lotów.
   - Przypisywanie załogi do samolotu.
   - Anulowanie lotów.
@@ -20,33 +20,33 @@ Spedytor
   - Kontrola pogody.
   - Kontrola ruchu lotniczego.
 
-Załoga
-  -Obsługa cateringu.
-  -Zgłoszenie potrzebę zatankowania.
-  -Kontrola biletów.
-  -Sprawdzanie stanu technicznego urządzeń.
-  -Kontrola wagi samolotów.
-  -Komunikaty bezpieczeństwa przed startem.
-  -Kontrola luków bagażowych, drzwi oraz sprzętu ratunkowego.
+2. Załoga
+  - Obsługa cateringu.
+  - Zgłoszenie potrzebę zatankowania.
+  - Kontrola biletów.
+  - Sprawdzanie stanu technicznego urządzeń.
+  - Kontrola wagi samolotów.
+  - Komunikaty bezpieczeństwa przed startem.
+  - Kontrola luków bagażowych, drzwi oraz sprzętu ratunkowego.
  
-Klient
-  -Kupowanie biletów.
-  -Odprawa online.
-  -Rezygnacja z rezerwacji.
-  -Płatność online.
-  -Sprawdzenie informacji o locie.
-  -Sprawdzanie rozkładu wszystkich lotów.
-  -Zgłaszanie feedbacka (opinia).
-  -Zamawianie jedzenie (na tablecie w samolocie)
+3. Klient
+  - Kupowanie biletów.
+  - Odprawa online.
+  - Rezygnacja z rezerwacji.
+  - Płatność online.
+  - Sprawdzenie informacji o locie.
+  - Sprawdzanie rozkładu wszystkich lotów.
+  - Zgłaszanie feedbacka (opinia).
+  - Zamawianie jedzenie (na tablecie w samolocie)
 
-Kierownik techniczny
-  -Sprawdzanie stanu wizualnego samolotu.
-  -Sprawdzanie stanu technicznego samolotu.
-  -Wysłać samolot na badanie techniczne.
-  -Przypisywanie samolotów do danego doku.
-  -Kupowanie samolotów/modyfikowanie/modernizacja/tuning.
-  -Zarządzanie pracownikami / bazą danych klientów/pracowników.
-  -Dbanie o rentowność samolotów.
+4. Kierownik techniczny
+  - Sprawdzanie stanu wizualnego samolotu.
+  - Sprawdzanie stanu technicznego samolotu.
+  - Wysłać samolot na badanie techniczne.
+  - Przypisywanie samolotów do danego doku.
+  - Kupowanie samolotów/modyfikowanie/modernizacja/tuning.
+  - Zarządzanie pracownikami / bazą danych klientów/pracowników.
+  - Dbanie o rentowność samolotów.
 
 
 
