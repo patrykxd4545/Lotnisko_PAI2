@@ -4,7 +4,7 @@ Aplikacja wspomagająca zarządzanie linią lotniczą
 
 ## Zakres projektu:
 
-Program wspomagąłby działanie lini lotniczych oraz ich zarządzanie. Wszystkie funkcjonalności opisaliśmy poniżej w Kategoriach użytkowników i ich funkcjonalności.
+Program wspomagałby działanie lini lotniczych oraz ich zarządzanie. Wszystkie funkcjonalności opisaliśmy poniżej w Kategoriach użytkowników i ich funkcjonalności.
 
 
 ## Kategorie użytkowników i ich funkcjonalności:
