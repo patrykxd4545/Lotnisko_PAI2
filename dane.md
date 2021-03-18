@@ -56,13 +56,13 @@ Java Spring + Angular + MySql
 
 ## Skład zespołu:
 
-- Albert Smoliński (albertcisc98@gmail.com) - Tworzenie kontrolera ruchu lotniczego
+- Albert Smoliński (albertcisc98@gmail.com) - Tworzenie spedytora
 
 - Wojtek Dominek (wojtekdom7@gmail.com) - Tworzenie klienta/ pasażera
 
-- Patryk Niziołek (niziolek900@gmail.com) - Tworzenie celnika
+- Patryk Niziołek (niziolek900@gmail.com) - Tworzenie załogi
 
-- Dawid Milczarek (dawmilczarek@gmail.com) - Tworzenie administratora
+- Dawid Milczarek (dawmilczarek@gmail.com) - Tworzenie kierownika
 
 ## Realizowane tematy z przedmiotów:
 - Dawid Milczarek: Podstawy inżynierii programowania - Warsztat samochodowy
