@@ -1,4 +1,4 @@
-# Dawid Milczarek - Administrator
+# Dawid Milczarek - Kierownik
 
 ![scenariusze1](https://user-images.githubusercontent.com/73499494/111689954-ecefa900-882c-11eb-98b7-8f4d92eefa33.png)
 
