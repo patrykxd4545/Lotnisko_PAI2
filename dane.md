@@ -10,6 +10,7 @@ Program wspomagąłby działanie lini lotniczych oraz ich zarządzanie. Wszystki
 ## Kategorie użytkowników i ich funkcjonalności:
 
 Użytkownicy:
+
 **1. Spedytor**
   - Tworzenie lotów.
   - Przypisywanie załogi do samolotu.
