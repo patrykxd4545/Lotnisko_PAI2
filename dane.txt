@@ -7,18 +7,18 @@ Aplikacja wspomagająca zarządzanie lotniskiem
 
 
 
-# Kategorie użytkowników i ich funkcjonalności:
+## Kategorie użytkowników i ich funkcjonalności:
 
 Użytkownicy:
 Spedytor
-  -Tworzenie lotów.
-  -Przypisywanie załogi do samolotu.
-  -Anulowanie lotów.
-  -Wyliczanie czasu pracy załogi.
-  -Szeregowanie załogą.
-  -Harmonogram lotów.
-  -Kontrola pogody.
-  -Kontrola ruchu lotniczego.
+  - Tworzenie lotów.
+  - Przypisywanie załogi do samolotu.
+  - Anulowanie lotów.
+  - Wyliczanie czasu pracy załogi.
+  - Szeregowanie załogą.
+  - Harmonogram lotów.
+  - Kontrola pogody.
+  - Kontrola ruchu lotniczego.
 
 Załoga
   -Obsługa cateringu.
