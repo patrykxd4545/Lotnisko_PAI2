@@ -10,7 +10,7 @@ Program wspomagąłby działanie lini lotniczych oraz ich zarządzanie. Wszystki
 ## Kategorie użytkowników i ich funkcjonalności:
 
 Użytkownicy:
-1. Spedytor
+**1. Spedytor**
   - Tworzenie lotów.
   - Przypisywanie załogi do samolotu.
   - Anulowanie lotów.
@@ -20,7 +20,7 @@ Użytkownicy:
   - Kontrola pogody.
   - Kontrola ruchu lotniczego.
 
-2. Załoga
+**2. Załoga**
   - Obsługa cateringu.
   - Zgłoszenie potrzebę zatankowania.
   - Kontrola biletów.
@@ -29,7 +29,7 @@ Użytkownicy:
   - Komunikaty bezpieczeństwa przed startem.
   - Kontrola luków bagażowych, drzwi oraz sprzętu ratunkowego.
  
-3. Klient
+**3. Klient**
   - Kupowanie biletów.
   - Odprawa online.
   - Rezygnacja z rezerwacji.
@@ -39,7 +39,7 @@ Użytkownicy:
   - Zgłaszanie feedbacka (opinia).
   - Zamawianie jedzenie (na tablecie w samolocie)
 
-4. Kierownik techniczny
+**4. Kierownik techniczny**
   - Sprawdzanie stanu wizualnego samolotu.
   - Sprawdzanie stanu technicznego samolotu.
   - Wysłać samolot na badanie techniczne.
