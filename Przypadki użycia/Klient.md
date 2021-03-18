@@ -1,5 +1,6 @@
 # Wojciech Dominek
 
-![Klient1](https://user-images.githubusercontent.com/73896617/110834762-404a8000-829e-11eb-8ce6-37f6b0a71ad9.png)
-![Klient2](https://user-images.githubusercontent.com/73896617/110834765-40e31680-829e-11eb-8410-ca1a8a8c63b5.png)
-![Klient3](https://user-images.githubusercontent.com/73896617/110834766-417bad00-829e-11eb-96c4-b31caa009893.png)
+![Klient1v2](https://user-images.githubusercontent.com/73896617/111687740-eceea980-882a-11eb-92ae-cc61fef2f3bb.png)
+![klient2v2](https://user-images.githubusercontent.com/73896617/111687742-ee1fd680-882a-11eb-903a-e55666ec4dc4.png)
+![Klient3v2](https://user-images.githubusercontent.com/73896617/111687743-ee1fd680-882a-11eb-8218-6310e2fd0804.png)
+
