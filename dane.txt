@@ -1,8 +1,8 @@
-# #Temat projektu:
+# Temat projektu:
 
 Aplikacja wspomagająca zarządzanie lotniskiem
 
-# Zakres projektu:
+## Zakres projektu:
 
 
 
@@ -50,11 +50,11 @@ Kierownik techniczny
 
 
 
-#Wykorzystane technologie:
+## Wykorzystane technologie:
 
 Java Spring + Angular + MySql
 
-#Skład zespołu:
+## Skład zespołu:
 
 - Albert Smoliński (albertcisc98@gmail.com) - Tworzenie kontrolera ruchu lotniczego
 
@@ -64,7 +64,7 @@ Java Spring + Angular + MySql
 
 - Dawid Milczarek (dawmilczarek@gmail.com) - Tworzenie administratora
 
-#Realizowane tematy z przedmiotów:
+## Realizowane tematy z przedmiotów:
 - Dawid Milczarek: Podstawy inżynierii programowania - Warsztat samochodowy
 - Wojtek Dominek: Podstawy inżynierii programowania - Tworzenie tras koncertowych
 - Albert Smoliński: Podstawy inżynierii programowania - Hipermarket
