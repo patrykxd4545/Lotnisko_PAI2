@@ -1,4 +1,4 @@
-# Temat projektu:
+## Temat projektu:
 
 Aplikacja wspomagająca zarządzanie linią lotniczą
 
