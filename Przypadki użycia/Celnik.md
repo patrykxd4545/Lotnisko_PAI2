@@ -1,5 +1,6 @@
 Patryk Niziołek
-![4](https://user-images.githubusercontent.com/65347753/110932026-39b61a00-832b-11eb-8da7-9fda02cdb385.png)
-![1](https://user-images.githubusercontent.com/65347753/110861094-ef4a8400-82bd-11eb-91ce-715068d3f958.png)
-![2](https://user-images.githubusercontent.com/65347753/110861105-f2de0b00-82bd-11eb-9047-f8b9d2121b0f.png)
 
+
+![obraz](https://user-images.githubusercontent.com/65347753/111768731-99bb3c00-88a8-11eb-8946-d4ce09f1b86c.png)
+![obraz](https://user-images.githubusercontent.com/65347753/111768829-b5264700-88a8-11eb-9c83-151a242ff75d.png)
+![obraz](https://user-images.githubusercontent.com/65347753/111768970-ea329980-88a8-11eb-8cdc-a291789c0a98.png)
