@@ -1,4 +1,6 @@
 Patryk Niziołek
+
+
 ![obraz](https://user-images.githubusercontent.com/65347753/111770010-2adee280-88aa-11eb-8241-932a50c12b2d.png)
 
 
