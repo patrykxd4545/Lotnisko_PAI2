@@ -43,9 +43,9 @@ Użytkownicy:
 **4. Kierownik techniczny**
   - Sprawdzanie stanu wizualnego samolotu.
   - Sprawdzanie stanu technicznego samolotu.
-  - Wysłać samolot na badanie techniczne.
+  - Wysyłanie samolotów na badanie techniczne.
   - Przypisywanie samolotów do danego doku.
-  - Kupowanie samolotów/modyfikowanie/modernizacja/tuning.
+  - Kupowanie samolotów/modyfikowanie/modernizacja.
   - Zarządzanie pracownikami / bazą danych klientów/pracowników.
   - Dbanie o rentowność samolotów.
 
