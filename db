@@ -1,0 +1,266 @@
+public class AdminData {
+
+    //fields
+    private static ArrayList<Admin> admins;
+    private static Statement statement;
+
+
+    //get admins
+    public static ArrayList<Admin> getAdmins(){
+        admins = new ArrayList<>();
+
+        try{
+            statement = DataConnection.getConnection().createStatement();
+            ResultSet rs = statement.executeQuery("SELECT* FROM admin");
+
+            if(rs != null)
+                while (rs.next()) {
+                    Admin admin = new Admin();
+                    admin.setAdmin_id(rs.getInt(1));
+                    admin.setFirst_name(rs.getString(2));
+                    admin.setLast_name(rs.getString(3));
+                    admin.setPassword(rs.getString(4));
+
+                    admins.add(admin);
+                }
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return admins;
+    }
+
+
+}
+
+
+public class AirlineData {
+
+    //fields
+    private static Statement statement;
+    private static ObservableList<Airline> airlines;
+
+
+    //get airlines
+    public static ObservableList<Airline> getAirlines(){
+        airlines = FXCollections.observableArrayList();
+
+        try{
+            statement = DataConnection.getConnection().createStatement();
+            ResultSet rs = statement.executeQuery("SELECT* FROM airline");
+
+            if(rs != null)
+                while (rs.next()) {
+                    Airline airline = new Airline();
+                    airline.setAirline_id(rs.getInt(1));
+                    airline.setDeparture_city(rs.getString(2));
+                    airline.setArrival_city(rs.getString(3));
+
+                    airlines.add(airline);
+                }
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return airlines;
+    }
+
+}
+
+
+
+public class BookingData {
+
+    //fields
+    private static Statement statement;
+    private static ObservableList<Booking> bookings;
+
+
+    //get bookings
+    public static ObservableList<Booking> getBookings(){
+        bookings = FXCollections.observableArrayList();
+
+        try{
+            statement = DataConnection.getConnection().createStatement();
+            ResultSet rs = statement.executeQuery("SELECT* FROM booking");
+
+            if(rs != null)
+                while (rs.next()) {
+                    Booking booking = new Booking();
+                    booking.setBooking_id(rs.getInt(1));
+                    booking.setCustomer_id(rs.getInt(2));
+                    booking.setFlight_id(rs.getInt(3));
+                    booking.setFare_class(rs.getString(4));
+
+                    bookings.add(booking);
+                }
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return bookings;
+    }
+
+
+
+    //method to add a booking
+    public static void insertBooking(Booking booking)
+    {
+        try{
+            statement.executeUpdate("INSERT INTO booking VALUE(default, " + booking.getCustomer_id() + ", " + booking.getFlight_id() + ", '" + booking.getFare_class() + "');");
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+
+    //method to edit a booking
+    public static void updateBooking(Booking booking){
+        try{
+            statement.executeUpdate("UPDATE booking SET customer_id = " + booking.getCustomer_id() + ", flight_id = " + booking.getFlight_id() + ", class = '" + booking.getFare_class() + "' WHERE booking_id = " + booking.getBooking_id() + ";" );
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+
+    //method to remove a booking
+    public static void deleteBooking(Booking booking){
+        try{
+            statement.executeUpdate("DELETE FROM booking WHERE booking_id = " + booking.getBooking_id() + ";");
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+}
+
+
+public class BookingTableData {
+
+    //fields
+    private static Statement statement;
+    private static ObservableList<BookingTable> bookingTableItems;
+
+
+    //get booking table items
+    public static ObservableList<BookingTable> getBookingTableItems() {
+        bookingTableItems = FXCollections.observableArrayList();
+
+        try{
+            statement = DataConnection.getConnection().createStatement();
+            ResultSet rs = statement.executeQuery("SELECT departure_date, departure_city, arrival_city, first_name, last_name, booking_id " +
+                    "FROM booking b JOIN flight f " +
+                    "ON b.flight_id = f.flight_id " +
+                    "JOIN customer c " +
+                    "ON b.customer_id = c.customer_id " +
+                    "JOIN schedule s " +
+                    "ON f.schedule_id = s.schedule_id " +
+                    "JOIN airline a " +
+                    "ON f.airline_id = a.airline_id " +
+                    "ORDER BY departure_date;");
+
+            if(rs!=null)
+                while(rs.next()){
+                    BookingTable b = new BookingTable();
+                    b.setDeparture_date(rs.getDate(1).toString());
+                    b.setRoute(rs.getString(2) + " -> " + rs.getString(3));
+                    b.setCustomer(rs.getString(4) + " " + rs.getString(5));
+                    b.setBooking_id(rs.getInt(6));
+
+                    bookingTableItems.add(b);
+                }
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return  bookingTableItems;
+    }
+
+}
+
+
+
+public class CustomerData {
+
+    //fields
+    private static Statement statement;
+    private static ObservableList<Customer> customers;
+
+
+    //get customers
+    public static ObservableList<Customer> getCustomers(){
+        customers = FXCollections.observableArrayList();
+
+        try{
+            statement = DataConnection.getConnection().createStatement();
+            ResultSet rs = statement.executeQuery("SELECT* FROM customer");
+
+            if(rs != null)
+                while (rs.next()) {
+                    Customer customer = new Customer();
+                    customer.setCustomer_id(rs.getInt(1));
+                    customer.setFirst_name(rs.getString(2));
+                    customer.setLast_name(rs.getString(3));
+                    customer.setAge(rs.getInt(4));
+                    customer.setPassport_number(rs.getString(5));
+                    customer.setPhone_nr(rs.getString(6));
+
+                    customers.add(customer);
+                }
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return customers;
+    }
+
+
+
+    //method to add a customer
+    public static void insertCustomer(Customer customer)
+    {
+        try{
+            statement.executeUpdate("INSERT INTO customer VALUE(default, '" + customer.getFirst_name() + "', '" + customer.getLast_name() + "', "
+                    + customer.getAge() + ", '" + customer.getPassport_number() + "', '" + customer.getPhone_nr() + "');");
+            customers.add(customer);
+            customer.setCustomer_id(customers.indexOf(customer) + 1);
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+    //method to update a customer
+    public static void updateCustomer(Customer customer){
+        try{
+            statement.executeUpdate("UPDATE customer SET first_name = '" + customer.getFirst_name() +"', last_name = '" + customer.getLast_name() + "', age = " + customer.getAge() + ", passport_number = '" + customer.getPassport_number() + "', phone_nr = '" + customer.getPhone_nr() + "' WHERE customer_id = " + customer.getCustomer_id() + ";");
+            customers.set(customer.getCustomer_id() - 1, customer);
+        }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+}
