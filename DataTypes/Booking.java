@@ -1,6 +1,5 @@
 package Application.DataTypes;
 
-import javafx.beans.property.*;
 
 public class Booking {
 
