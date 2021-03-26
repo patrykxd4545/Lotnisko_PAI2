@@ -1,10 +1,9 @@
 # Dawid Milczarek - Kierownik
 
-![scenariusze1](https://user-images.githubusercontent.com/73499494/111689954-ecefa900-882c-11eb-98b7-8f4d92eefa33.png)
+![scenariusz1](https://user-images.githubusercontent.com/73499494/112611549-4011bf00-8e1e-11eb-9cc3-e93f8305fd6b.png)
 
+![scenariusz2](https://user-images.githubusercontent.com/73499494/112611552-41db8280-8e1e-11eb-89ec-c9ac9130594a.png)
 
-![scenariusze2](https://user-images.githubusercontent.com/73499494/111689967-ef520300-882c-11eb-9bd9-6daefb10d93d.png)
+![scenariusz3](https://user-images.githubusercontent.com/73499494/112611559-43a54600-8e1e-11eb-9769-3b5f788fa1f4.png)
 
-
-![scenariusze3](https://user-images.githubusercontent.com/73499494/111689974-f11bc680-882c-11eb-87e0-161f1c7cc2d8.png)
 
