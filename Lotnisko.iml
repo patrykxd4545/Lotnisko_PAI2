@@ -15,6 +15,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="Entities" />
           <factory-entry name="Lotnisko" value="e07687ef-bcf8-48e6-93d9-466e5c36383c" />
         </datasource-mapping>
         <naming-strategy-map />
