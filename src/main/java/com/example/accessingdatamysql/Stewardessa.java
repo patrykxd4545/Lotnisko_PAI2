@@ -65,5 +65,3 @@ public class Stewardessa {
         this.crew_id = crew_id;
     }
 }
-
-
