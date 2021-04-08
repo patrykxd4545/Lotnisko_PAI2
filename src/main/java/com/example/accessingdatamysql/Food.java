@@ -7,10 +7,15 @@ import javax.persistence.*;
 @Entity
 @Table(name = "foods")
 public class Food {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "food_id")
     private Long id;
+<<<<<<< HEAD
     private String name;
     private String description;
 
@@ -37,4 +42,7 @@ public class Food {
     public void setDescription(String description) {
         this.description = description;
     }
+=======
+
+>>>>>>> origin/main
 }
