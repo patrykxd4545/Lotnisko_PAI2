@@ -27,5 +27,4 @@ public class Person {
     private String nationality;
 
 
-
 }
