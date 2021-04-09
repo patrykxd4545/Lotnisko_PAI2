@@ -21,4 +21,8 @@ public class Passanger {
     @JoinColumn(name = "personid", referencedColumnName = "id")
     private Person person;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ticket_id", referencedColumnName = "ticket_id")
+    private Ticket ticket_id;
+
 }
