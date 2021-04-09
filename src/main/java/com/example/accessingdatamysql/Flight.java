@@ -13,9 +13,13 @@ public class Flight {
     private Time departure_time;
     private String source;
     private String destination;
-    private Integer plane_id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "pilot_id", referencedColumnName = "pilot_id")
-    private Pilot pilot_id;
+    @JoinColumn(name = "crew_id", referencedColumnName = "crew_id")
+    private Crew crew_id;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "plane_id", referencedColumnName = "plane_id")
+    private Plane plane_id;
+
 }

@@ -15,8 +15,8 @@ public class Baggage {
 
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "passangerid", referencedColumnName = "id")
-    private Passanger passanger;
+    @JoinColumn(name = "passanger_id", referencedColumnName = "passanger_id")
+    private Passanger passanger_id;
 
 
 }

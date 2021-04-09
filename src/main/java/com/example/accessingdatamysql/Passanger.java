@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class Passanger {
     @Id
     @GeneratedValue
-    private Long id;
+    private Long passanger_id;
 
     @Column(nullable = false)
     private Long phonenumber;
