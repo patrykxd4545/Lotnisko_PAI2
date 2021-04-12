@@ -7,7 +7,7 @@ import java.sql.Time;
 public class Pilot {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer pilot_id;
+    private Integer  pilot_id;
     private Integer passport_number;
     private Integer airlines_id;
     private Integer experience;

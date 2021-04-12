@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class AirportTo {
     @Id
     @GeneratedValue
-    private Long id;
+    private Long  id;
 
     @Column(nullable = false)
     private String name;
