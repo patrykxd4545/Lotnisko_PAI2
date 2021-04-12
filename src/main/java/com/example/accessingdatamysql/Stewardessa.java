@@ -11,7 +11,7 @@ public class Stewardessa {
     private Integer Stewardessa_ID;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "service_id", referencedColumnName = "service_id")
-    private Food_Service Service_ID;
+    private Food_service Service_ID;
     private Integer passport_number;
     private Integer experience;
     private Double salary;
@@ -25,11 +25,11 @@ public class Stewardessa {
         Stewardessa_ID = stewardessa_ID;
     }
 
-    public Food_Service getService_ID() {
+    public Food_service getService_ID() {
         return Service_ID;
     }
 
-    public void setService_ID(Food_Service service_ID) {
+    public void setService_ID(Food_service service_ID) {
         Service_ID = service_ID;
     }
 
