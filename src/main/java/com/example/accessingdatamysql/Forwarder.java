@@ -21,8 +21,8 @@ public class Forwarder {
     private String salary;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "personid", referencedColumnName = "id")
-    private Person person;
+    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
+    private Employee employee_id;
 
 
 
