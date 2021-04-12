@@ -4,9 +4,9 @@ package com.example.accessingdatamysql;
 import javax.persistence.*;
 
 @Entity
-@Table(name ="airportto")
+@Table(name ="departureAirport")
 
-public class AirportTo {
+public class DepartureAirport {
     @Id
     @GeneratedValue
     private Long  id;
@@ -27,6 +27,8 @@ public class AirportTo {
     @JoinColumn(name = "forwarderid", referencedColumnName = "id")
     private Forwarder forwarder;
 
-
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "arrivalairportid", referencedColumnName = "id")
+    private ArrivalAirport arrivalairportid;
 
 }
