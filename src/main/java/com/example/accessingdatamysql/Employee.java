@@ -7,15 +7,9 @@ import java.util.Date;
 public class Employee {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private Integer employee_id;
     private String first_name;
     private String last_name;
     private Date birthday;
     private String email;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "personid", referencedColumnName = "id")
-    private Person person;
-
-
 }

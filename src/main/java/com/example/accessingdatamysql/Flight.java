@@ -22,8 +22,4 @@ public class Flight {
     @JoinColumn(name = "plane_id", referencedColumnName = "plane_id")
     private Plane plane_id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "ticket_id", referencedColumnName = "ticket_id")
-    private Ticket ticket_id;
-
 }

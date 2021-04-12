@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="0162078d-5aad-426e-a66b-34adc66f9cb7">
+    <data-source source="LOCAL" name="@localhost" uuid="33b5b50e-f32e-4bc9-ac63-6cae7252eef2">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
@@ -13,6 +13,18 @@
         <property name="characterEncoding" value="utf8" />
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="Lotnisko/Hibernate" uuid="34700371-a75f-4154-882f-a553ef765555">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/lotnisko</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
   </component>
