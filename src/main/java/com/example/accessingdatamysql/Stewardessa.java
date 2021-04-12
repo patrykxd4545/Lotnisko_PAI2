@@ -15,19 +15,7 @@ public class Stewardessa {
     private Integer passport_number;
     private Integer experience;
     private Double salary;
-
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "personid", referencedColumnName = "id")
-    private Person person;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
-    private Employee employee_id;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "crew_id", referencedColumnName = "crew_id")
-    private Crew crew_id;
+    private Integer crew_id;
 
     public Integer getStewardessa_ID() {
         return Stewardessa_ID;
@@ -69,6 +57,11 @@ public class Stewardessa {
         this.salary = salary;
     }
 
+    public Integer getCrew_id() {
+        return crew_id;
+    }
 
-
+    public void setCrew_id(Integer crew_id) {
+        this.crew_id = crew_id;
+    }
 }
