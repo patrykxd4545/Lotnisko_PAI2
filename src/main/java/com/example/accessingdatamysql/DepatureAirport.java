@@ -27,4 +27,8 @@ public class DepatureAirport {
     @JoinColumn(name = "forwarderid", referencedColumnName = "id")
     private Forwarder forwarder;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "flight_id", referencedColumnName = "flight_id")
+    private Flight flight_id;
+
 }

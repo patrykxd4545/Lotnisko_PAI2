@@ -10,7 +10,7 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ticket_id")
     private Long ticket_id;
-
+    private Integer order;
     private Date flightDate;
     private Integer seat_number;
     private Double cost;

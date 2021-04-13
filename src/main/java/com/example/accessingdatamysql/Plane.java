@@ -19,4 +19,8 @@ public class Plane {
     @JoinColumn(name = "flight_id", referencedColumnName = "flight_id")
     private Flight flight_id;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "crew_id", referencedColumnName = "crew_id")
+    private Crew crew_id;
+
 }

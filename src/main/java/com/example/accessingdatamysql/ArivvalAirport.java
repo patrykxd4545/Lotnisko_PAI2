@@ -31,4 +31,7 @@ public class ArivvalAirport {
     @JoinColumn(name = "depatureairportid", referencedColumnName = "id")
     private DepatureAirport depatureairport;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "flight_id", referencedColumnName = "flight_id")
+    private Flight flight_id;
 }
