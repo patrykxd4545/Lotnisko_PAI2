@@ -26,5 +26,7 @@ public class Person {
     @Column(nullable = false)
     private String nationality;
 
-
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
+    private Employee employee_id;
 }

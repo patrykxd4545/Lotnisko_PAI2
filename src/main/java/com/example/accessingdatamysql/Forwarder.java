@@ -24,6 +24,9 @@ public class Forwarder {
     @JoinColumn(name = "personid", referencedColumnName = "id")
     private Person person;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
+    private Employee employee_id;
 
 
 }

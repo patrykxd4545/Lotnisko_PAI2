@@ -19,4 +19,7 @@ public class Ticket {
     @JoinColumn(name = "passanger_id", referencedColumnName = "passanger_id")
     private Passanger passanger_id;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "baggageid", referencedColumnName = "id")
+    private Baggage baggageid;
 }

@@ -22,4 +22,9 @@ public class Flight {
     @JoinColumn(name = "plane_id", referencedColumnName = "plane_id")
     private Plane plane_id;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "destination_id", referencedColumnName = "destination_id")
+    private Destination destination_id;
+
+
 }

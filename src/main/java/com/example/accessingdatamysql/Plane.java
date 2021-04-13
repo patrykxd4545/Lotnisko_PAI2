@@ -15,4 +15,8 @@ public class Plane {
     private String brand;
     private String model;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "flight_id", referencedColumnName = "flight_id")
+    private Flight flight_id;
+
 }
