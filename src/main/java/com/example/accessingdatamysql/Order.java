@@ -16,8 +16,8 @@ public class Order {
     private Food_service service_id;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "passanger_id", referencedColumnName = "passanger_id")
-    private Passanger passanger_id;
+    @JoinColumn(name = "ticket_id", referencedColumnName = "ticket_id")
+    private Ticket ticket_id;
 
 
 }
