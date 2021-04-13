@@ -4,11 +4,11 @@ package com.example.accessingdatamysql;
 import javax.persistence.*;
 
 @Entity
-@Table(name ="passanger")
+@Table(name ="passangers")
 
 public class Passanger {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long passanger_id;
 
     @Column(nullable = false)
