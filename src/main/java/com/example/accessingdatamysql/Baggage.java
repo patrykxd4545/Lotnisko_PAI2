@@ -14,9 +14,9 @@ public class Baggage {
     private Long bookingid;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "passanger_id", referencedColumnName = "passanger_id")
-    private Passanger passanger_id;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "ticket_id", referencedColumnName = "ticket_id")
+    private Ticket ticket_id;
 
 
 }

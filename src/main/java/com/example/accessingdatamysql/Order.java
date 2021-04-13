@@ -13,7 +13,7 @@ public class Order {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "service_id", referencedColumnName = "service_id")
-    private Food_Service service_id;
+    private Food_service service_id;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "passanger_id", referencedColumnName = "passanger_id")
