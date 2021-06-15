@@ -1,0 +1,69 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display Foods User</h1>
+
+    </div>
+
+    <div class="page">
+
+      <h1>Foods User</h1>
+      <form class="form-header">
+        <input #myInput class="au-input au-input-xl" type="text"
+               placeholder="Search for products ..." (keyup.enter)="doSearch(myInput.value)" />
+        <button class="au-btn-submit" type="submit" (click)="doSearch(myInput.value)" >
+          Search
+        </button>
+      </form>
+
+      <div class="cart-area d-n">
+        <a routerLink="/cart-details">
+          <div class="total">{{ totalPrice | currency: 'EUR'}}
+            <span>{{ totalQuantity }}</span>
+          </div>
+          <i  class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="container row">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Food Name</th>
+              <th>Food Price</th>
+              <th>Food description</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let food of foods">
+              <td>{{food.id}}</td>
+              <td>{{food.name}}</td>
+              <td>{{food.price}}€</td>
+              <td>{{food.description}}</td>
+              <button (click)="addToCart(food)" class="btn btn-info" >Add to cart</button>
+              <td>
+                <img class="img-responsive" src="{{ food.retrievedImage }}" width="150px">
+              </td>
+
+
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,105 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Plane list:</h1>
+    </div>
+
+    <div>
+      <div *ngIf="currentPlane.id" class="edit-form">
+        <form>
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="mark">Mark:</label>
+              <input type="text" class="form-control" id="mark"  required [(ngModel)]="currentPlane.mark" name="mark">
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="model">Model:</label>
+              <input type="text" class="form-control" id="model" required [(ngModel)]="currentPlane.model" name="model">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="seatsNumber">Seats number:</label>
+              <input type="text" class="form-control" id="seatsNumber"  required [(ngModel)]="currentPlane.seatsNumber" name="seatsNumber">
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="fuel">Tank capacity:</label>
+              <input type="text" class="form-control" id="fuel" required [(ngModel)]="currentPlane.fuel" name="fuel">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label for="weight">Weight:</label>
+              <input type="text" class="form-control" id="weight"  required [(ngModel)]="currentPlane.weight" name="weight">
+            </div>
+            <div class="col-md-6 form-group">
+              <label for="accident">Airplane malfunctions:</label>
+              <input type="text" class="form-control" id="accident" required [(ngModel)]="currentPlane.accident" name="accident">
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12 form-group">
+              <label for="cycles">Airplane cycles:</label>
+              <input type="text" class="form-control" id="cycles" required [(ngModel)]="currentPlane.cycles" name="cycles">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label><strong>Status:</strong></label>
+            {{ currentPlane.state ? "Ready" : "Pending" }}
+          </div>
+        </form>
+
+        <button
+          class="badge badge-primary mr-2"
+          *ngIf="currentPlane.state"
+          (click)="updateStated(false)"
+        >
+          UnReady
+        </button>
+        <button
+          *ngIf="!currentPlane.state"
+          class="badge badge-primary mr-2"
+          (click)="updateStated(true)"
+        >
+          Ready
+        </button>
+
+        <button class="badge badge-danger mr-2" (click)="deletePlane()">
+          Delete
+        </button>
+
+        <button
+          type="submit"
+          class="badge badge-success mb-2"
+          (click)="updatePlane()"
+        >
+          Update
+        </button>
+        <p>{{ message }}</p>
+      </div>
+
+      <div *ngIf="!currentPlane.id">
+        <br />
+        <p>Cannot access this Plane...</p>
+      </div>
+    </div>
+
+
+    <div class="userdashboard">
+      <button class="btn btn-primary" [routerLink]="['/admin/planes']">Go Back <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

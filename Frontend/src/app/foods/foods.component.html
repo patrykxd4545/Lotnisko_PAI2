@@ -1,0 +1,47 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display Foods Crew</h1>
+    </div>
+
+    <div class="page">
+
+      <h1>Foods Crew</h1>
+      <a class="btn btn-primary" (click)="addFood()">Add New Food</a>
+      <div class="container row">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Food Name</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let food of foods">
+              <td>{{food.id}}</td>
+              <td>{{food.name}}</td>
+              <td>
+                <button type="button" class="btn btn-primary" (click)="viewFood(food.id)">Show Details</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <app-view-food *ngIf="action === 'view'" [food]="selectedFood" (foodDeletedEvent)="refreshData()"></app-view-food>
+          <app-add-food *ngIf="action === 'edit' || action === 'add'" [food]="selectedFood" (foodAddedEvent)="refreshData()"></app-add-food>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+<app-footer></app-footer>

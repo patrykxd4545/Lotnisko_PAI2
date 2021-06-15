@@ -1,0 +1,104 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Add Plane</h1>
+    </div>
+
+    <div class="submit-form">
+      <form #frm="ngForm">
+        <div class="row">
+
+          <div class="col-md-6 form-group">
+            <label for="name">Plane mark:</label>
+            <input type="text" class="form-control" id="mark" #mark="ngModel" required [(ngModel)]="plane.mark" name="mark">
+            <div *ngIf = "mark?.touched && mark?.invalid" class="text-danger">
+              <div *ngIf = "mark.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label for="name">Plane model:</label>
+            <input type="text" class="form-control" id="model" #model="ngModel" required [(ngModel)]="plane.model" name="model">
+            <div *ngIf = "model?.touched && model?.invalid" class="text-danger">
+              <div *ngIf = "model.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="name">Seats number:</label>
+            <input type="text" class="form-control" id="seatsNumber" #seatsNumber="ngModel" required [(ngModel)]="plane.seatsNumber" name="seatsNumber">
+            <div *ngIf = "seatsNumber?.touched && seatsNumber?.invalid" class="text-danger">
+              <div *ngIf = "seatsNumber.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="name">Tank capacity:</label>
+            <input type="text" class="form-control" id="fuel" #fuel="ngModel" required [(ngModel)]="plane.fuel" name="fuel">
+            <div *ngIf = "fuel?.touched && fuel?.invalid" class="text-danger">
+              <div *ngIf = "fuel.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="name">Plane weight:</label>
+            <input type="text" class="form-control" id="weight" #weight="ngModel" required [(ngModel)]="plane.weight" name="weight">
+            <div *ngIf = "weight?.touched && weight?.invalid" class="text-danger">
+              <div *ngIf = "weight.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="name">Airplane malfunctions:</label>
+            <input type="text" class="form-control" id="accident" #accident="ngModel" required [(ngModel)]="plane.accident" name="accident">
+            <div *ngIf = "accident?.touched && accident?.invalid" class="text-danger">
+              <div *ngIf = "accident.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-12 form-group">
+            <label for="name">Airplane cycles:</label>
+            <input type="text" class="form-control" id="cycles" #cycles="ngModel" required [(ngModel)]="plane.cycles" name="cycles">
+            <div *ngIf = "cycles?.touched && cycles?.invalid" class="text-danger">
+              <div *ngIf = "cycles.errors?.required">
+                The field cannot be empty
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <button [disabled]="frm.invalid" (click)="savePlane()" class="btn btn-primary">Add Plane</button>
+      </form>
+    </div>
+    <br />
+    <div *ngIf="submitted">
+      <h4>Plane was added successfully!</h4>
+      <button class="btn btn-success" (click)="newPlane()">Add new Plane</button>
+    </div>
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a class="navbar-brand p-0" href="/">
+    <img src="../assets/logo.png" width="30" height="30" alt="Airline">
+  </a>
+  <ul class="navbar-nav mr-auto" routerLinkActive="active">
+
+    <li class="nav-item"><a href="/" class="nav-link" routerLink="/"><i class="fa fa-home" aria-hidden="true"></i> Home </a></li>
+    <li class="nav-item" *ngIf="showAdminBoard"><a href="/admin" class="nav-link" routerLink="admin"><i class="fa fa-address-book" aria-hidden="true"></i>
+      Admin Board</a></li>
+
+    <li class="nav-item" *ngIf="showCrewBoard"><a href="/crew" class="nav-link" routerLink="crew"><i class="fa fa-users" aria-hidden="true"></i>
+      Crew Board</a></li>
+
+    <li class="nav-item" *ngIf="showModeratorBoard"><a href="/mod" class="nav-link" routerLink="mod"><i class="fa fa-globe" aria-hidden="true"></i>
+      Forwarder Board</a></li>
+
+    <li class="nav-item" *ngIf="showUserBoard"><a href="/user" class="nav-link" routerLink="user"><i class="fa fa-user" aria-hidden="true"></i>
+      User board</a></li>
+  </ul>
+  <ul class="navbar-nav ml-auto navbar_right" *ngIf="!isLoggedIn">
+    <li class="nav-item"><a href="/register" class="nav-link" routerLink="register">Register</a></li>
+    <li class="nav-item"><a href="/login" class="nav-link" routerLink="login">Login</a></li>
+  </ul>
+  <ul class="navbar-nav ml-auto navbar_right" *ngIf="isLoggedIn">
+    <li class="nav-item"><a href="/profile" class="nav-link" routerLink="profile"><i class="fa fa-user-circle-o"></i> {{ username }}</a></li>
+    <li class="nav-item"><a href class="nav-link" (click)="logout()"><i class="fa fa-sign-out ico" ></i> Logout</a></li>
+
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

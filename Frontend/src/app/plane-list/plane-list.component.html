@@ -1,0 +1,102 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Plane list:</h1>
+    </div>
+
+    <div class="list row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search by model"
+            [(ngModel)]="model"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              (click)="searchModel()"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Planes list:</h4>
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let plane of planes; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActivePlane(plane, i)"
+          >
+            Plane ID: {{ plane.id }}, model: {{ plane.model }}
+          </li>
+        </ul>
+
+        <button class="m-3 btn btn-sm btn-danger" (click)="removeAllPlanes()">
+          Remove All
+        </button>
+      </div>
+      <div class="col-md-6">
+        <div *ngIf="currentPlane">
+          <div>
+            <img src="../assets/plane2.webp" width="70" height="70" alt="Airline">
+          </div>
+          <div>
+            <label><strong>Mark:</strong></label> {{ currentPlane.mark }}
+          </div>
+          <div>
+            <label><strong>Model:</strong></label> {{ currentPlane.model }}
+          </div>
+          <div>
+            <label><strong>Seats number:</strong></label>
+            {{ currentPlane.seatsNumber }}
+          </div>
+          <div>
+            <label><strong>Tank capacity:</strong></label>
+            {{ currentPlane.fuel }} liters
+          </div>
+          <div>
+            <label><strong>Weight:</strong></label>
+            {{ currentPlane.weight }} kg
+          </div>
+          <div>
+            <label><strong>Airplane malfunctions:</strong></label>
+            {{ currentPlane.accident }}
+          </div>
+          <div>
+            <label><strong>Cycles:</strong></label>
+            {{ currentPlane.cycles }}
+          </div>
+          <div>
+            <label><strong>Status:</strong></label>
+            {{ currentPlane.state ? "Ready" : "Pending" }}
+          </div>
+
+          <a class="badge badge-warning" routerLink="/admin/planes/{{ currentPlane.id }}">
+            Edit
+          </a>
+        </div>
+
+        <div *ngIf="!currentPlane">
+          <br />
+          <p>Please click on a Plane...</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

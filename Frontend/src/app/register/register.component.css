@@ -1,0 +1,158 @@
+.Hero
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)), url(src/assets/Flight1.jpg);
+  padding: 2rem;
+  position: relative;
+}
+
+.signupcontainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 55%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.signupform__heading
+{
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem 0;
+  font-weight: 600;
+}
+
+.error-msg
+{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+  font-weight: 600;
+}
+
+.signupform
+{
+  padding: 0.2rem;
+}
+
+.inputgroup
+{
+  margin: 0.5rem 0.5rem ;
+  width: 20rem;
+}
+
+.label {
+  font-size: 1rem;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.login {
+  padding-left:10px;
+  padding-top:20px;
+  font-size: small;
+  text-decoration: none;
+}
+
+.fa-arrow-circle-right
+{
+  padding:5px;
+}
+.bt{
+  text-align: center;
+}
+
+.input--style-4
+{
+  line-height: 2.5rem;
+  background: #fafafa;
+  -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border-radius: 5px;
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #666;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: none;
+  width: 15rem;
+}
+
+.fa-arrow-circle-right
+{
+  padding:5px;
+}
+
+.pwdcontainer
+{
+  position: relative;
+}
+.loginform__toggleicon
+{
+  position: absolute;
+  font-size: 1.3rem;
+  top: 4rem;
+  right: 1.5rem;
+}
+
+.submitbtn
+{
+  padding: 1rem 1rem;
+  outline: none;
+  color: floralwhite;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 10rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+div>small
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+  color: red;
+}
+
+@media screen and (max-width:1200px)
+{
+  .Hero
+  {
+    padding: 1rem;
+  }
+  .signupcontainer
+  {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  .input--style-4
+  {
+    width: 100%;
+  }
+  .inputgroup
+  {
+    margin: 1rem 0 ;
+  }
+}

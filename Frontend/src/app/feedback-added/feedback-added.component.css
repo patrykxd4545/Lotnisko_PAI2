@@ -1,0 +1,70 @@
+.wrapper
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('src/assets/headernew.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4834d4;
+}
+
+.menu
+{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Heading>h1
+{
+  padding: 2rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-top: 25%;
+}
+
+.titleheader
+{
+  padding:1rem 2rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.titleheader>h3
+{
+  margin: 0;
+}
+
+
+@keyframes move {
+  40% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 70%;
+    opacity: 0;
+  }
+}
+
+.submitbtn
+{
+  padding: 1rem 1rem;
+  outline: none;
+  color: floralwhite;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 10rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+

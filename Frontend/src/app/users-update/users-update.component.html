@@ -1,0 +1,65 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Update Ebook details</h1>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+
+        <div class="col-md-6 form-group">
+          <label for="name">Display name:</label>
+          <input type="text" class="form-control" id="displayName" required [(ngModel)]="user.displayName" name="displayName">
+        </div>
+
+        <div class="col-md-6 form-group">
+          <label for="name">E-mail</label>
+          <input type="text" class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-md-6 form-group">
+          <label for="name">First name:</label>
+          <input type="email" class="form-control" id="fname" required [(ngModel)]="user.fname" name="fname">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="name">Last name:</label>
+          <input type="phone" class="form-control" id="lname" required [(ngModel)]="user.lname" name="lname">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 form-group">
+          <label for="name">Date of birth:</label>
+          <input type="datetime" class="form-control" id="dateOfBirth" required [(ngModel)]="user.dateOfBirth" name="dateOfBirth">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="name">Contact number:</label>
+          <input type="text" class="form-control" id="contactNo" required [(ngModel)]="user.contactNo" name="destination">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 form-group">
+          <label for="name">Roles:</label>
+          <input type="text" class="form-control" id="roles" required [(ngModel)]="user.roles" name="roles">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

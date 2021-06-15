@@ -1,0 +1,98 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Users Database:</h1>
+    </div>
+
+    <div class="page">
+      <div>
+        <h3 class="sub_head">User's Informations</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              User ID:
+            </th>
+            <th class="th">
+              Nickname:
+            </th>
+            <th class="th">
+              Email:
+            </th>
+            <th class="th">
+              Phone number:
+            </th >
+            <th class="th">
+              First name:
+            </th>
+            <th class="th">
+              Last name:
+            </th>
+            <th class="th">
+              Birthdate:
+            </th>
+            <th class="th">
+              Created date:
+            </th>
+            <th class="th">
+              Provider:
+            </th>
+            <th class="th">
+
+            </th>
+            <th class="th">
+
+            </th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let f of users">
+          <tr>
+            <td class="td">
+              {{f.userId}}
+            </td>
+            <td class="td">
+              {{f.displayName}}
+            </td>
+            <td class="td">
+              {{f.email}}
+            </td>
+            <td class="td">
+              {{f.contactNo}}
+            </td>
+            <td class="td">
+              {{f.fname}}<br>
+            </td>
+            <td class="td">
+              {{f.lname}}<br>
+            </td>
+            <td class="td">
+              {{f.dateOfBirth | date:'yyyy-MM-dd'}}<br>
+            </td>
+            <td class="td">
+              {{f.createdDate | date:'yyyy-MM-dd hh:mm:ss'}}<br>
+            </td>
+            <td class="td">
+              {{f.provider}}<br>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-primary" (click)="updateUser(f.userId)">Update</button>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-danger" (click)="delete(f.userId)">Delete</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

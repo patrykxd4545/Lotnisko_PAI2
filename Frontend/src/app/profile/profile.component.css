@@ -1,0 +1,22 @@
+.wrapper
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('src/assets/headernew.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4834d4;
+}
+
+.menu
+{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}

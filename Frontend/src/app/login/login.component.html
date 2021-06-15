@@ -1,0 +1,50 @@
+<div class="loginwrapper">
+
+  <div class="logincontainer" >
+    <h1 class='loginform__heading' *ngIf="!isLoggedIn">Login</h1>
+    <form class="loginform" *ngIf="!isLoggedIn" #f="ngForm" novalidate (ngSubmit)="f.form.valid && onSubmit() && loginCheck()" >
+
+      <div class="inputcontainer">
+        <label class="label">Email</label>
+        <input type='email' class='loginform__input' name="username" autoComplete="off" [(ngModel)]="form.username" required #username="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        <div *ngIf="username.invalid && (username.dirty || username.touched ||f.submitted)">
+          <small>
+            <mat-error *ngIf="username.errors?.required">Email is a required field</mat-error>
+          </small>
+          <small *ngIf="username.errors?.pattern">This is not a valid Email</small>
+        </div>
+      </div>
+
+      <div class='pwdcontainer inputcontainer'>
+        <label class="label">Password</label>
+        <input type="password" id='password' class='loginform__input' name="password"
+               [(ngModel)]="form.password" minLength="8" autoComplete="off" required #password="ngModel"/>
+
+        <div *ngIf="password.invalid && (password.dirty || password.touched ||f.submitted)">
+          <small *ngIf="password.errors?.required">Password is required</small>
+          <small *ngIf="password.errors?.minlength">Password must be at least 8 charachters</small>
+        </div>
+        <div class="forgotpwd" [routerLink]="['/user/forgotpassword']">Forgot password?</div>
+      </div>
+      <button type="submit" class="submitbtn"> Login </button>
+      <a class="loginsignupbtn" [routerLink]="['/register']">Create Account<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+      <div class="form-group">
+        <div class="alert alert-danger" role="alert" *ngIf="isLoginFailed">Login failed: {{ errorMessage }}</div>
+      </div>
+      <div class="form-group">
+        <p class="social-login text-center">
+          Sign in with:
+          <a href="{{ googleURL }}" class="ml-2">
+            <img width="35px" height="35px" alt="Login with Google" src="/assets/img/google.png" class="btn-img">
+          </a>
+          <a href="{{ facebookURL }}">
+            <img style="padding-left: 5px;" width="35px" height="35px" alt="Login with Facebook" src="/assets/img/facebook.png" class="btn-img">
+          </a>
+        </p>
+      </div>
+    </form>
+    <div class="alert alert-success" *ngIf="isLoggedIn">Welcome {{currentUser.displayName}} <br>Logged in as {{ currentUser.roles }}.</div>
+  </div>
+</div>
+
+<app-footer></app-footer>

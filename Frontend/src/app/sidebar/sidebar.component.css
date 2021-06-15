@@ -1,0 +1,53 @@
+.ico
+{
+  font-size: 20px;
+}
+
+.dashboard--menu-wrapper
+{
+  height: 100%;
+  background-color: #6f11c1;
+  color: #333;
+  font-family: 'Poppins';
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.dashboard--menu
+{
+  padding:2rem 1.5rem;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.section
+{
+  display: inline-block;
+  width: 100%;
+  font-size: 0.9rem;
+  color: floralwhite;
+  cursor: pointer;
+  padding:0.6rem 0;
+}
+
+.section a
+{
+  text-decoration: none;
+  color: #d0cec0;
+}
+
+.section i
+{
+  margin-right: 0.2rem;
+  font-size: 1rem;
+}
+
+.section a:hover{
+  color:red;
+}
+

@@ -1,0 +1,103 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display Bookings:</h1>
+    </div>
+
+    <div class="page">
+      <div>
+        <h3 class="sub_head">User's Informations</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Booking No.:
+            </th>
+            <th class="th">
+              Source:
+            </th>
+            <th class="th">
+              Destination:
+            </th>
+            <th class="th">
+              Departure time:
+            </th >
+            <th class="th">
+              Arrival time:
+            </th>
+            <th class="th">
+              Journey date:
+            </th>
+            <th class="th">
+              No. of passengers:
+            </th>
+            <th class="th">
+              Booking amount:
+            </th>
+            <th class="th">
+              Booking date:
+            </th>
+            <th class="th">
+              Travel class
+            </th>
+            <th class="th">
+              Generate ticket
+            </th>
+            <th class="th">
+              Cancel booking
+            </th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let b of bookings">
+          <tr>
+            <td class="td">
+              {{b.bookingId}}
+            </td>
+            <td class="td">
+              {{b.source}}
+            </td>
+            <td class="td">
+              {{b.destination}}
+            </td>
+            <td class="td">
+              {{b.departure}}
+            </td>
+            <td class="td">
+              {{b.arrival}}<br>
+            </td>
+            <td class="td">
+              {{b.journeyDate}}<br>
+            </td>
+            <td class="td">
+              {{b.noOfPassengers}}<br>
+            </td>
+            <td class="td">
+              {{b.cost}} €<br>
+            </td>
+            <td class="td">
+              {{b.bookingDate}}<br>
+            </td>
+            <td class="td">
+              {{b.travelClass}}<br>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-primary"  (click)="goToTicket(b.bookingId)">Generate Ticket</button>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-danger"  (click)="cancelBooking(b.bookingId)">Cancel Booking</button>
+            </td>
+          </tr>
+          </tbody>
+         </table>
+        </div>
+
+    </div>
+
+
+
+    </div>
+</div>
+
+<app-footer></app-footer>

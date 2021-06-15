@@ -1,0 +1,72 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display Customer Feedbacks</h1>
+    </div>
+
+    <div class="page">
+      <div>
+        <h3 class="sub_head">Feedback's Informations:</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Feedback ID:
+            </th>
+            <th class="th">
+              First Name:
+            </th>
+            <th class="th">
+              Last Name:
+            </th>
+            <th class="th">
+              Email:
+            </th >
+            <th class="th">
+              Message:
+            </th>
+            <th class="th">
+              Response Message:
+            </th>
+            <th class="th">
+              Delete Message:
+            </th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let f of customerFeedback">
+          <tr>
+            <td class="td">
+              {{f.feedbackId}}
+            </td>
+            <td class="td">
+              {{f.firstName}}
+            </td>
+            <td class="td">
+              {{f.lastName}}
+            </td>
+            <td class="td">
+              {{f.emailFeedback}}
+            </td>
+            <td class="td">
+              {{f.message}}<br>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-success" (click)="responseFeedback(f.feedbackId)">Response</button>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-danger" (click)="delete(f.feedbackId)">Delete</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<app-footer></app-footer>

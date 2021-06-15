@@ -1,0 +1,94 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display All Flights</h1>
+    </div>
+
+    <div class="page">
+      <div>
+        <h3 class="sub_head">Flight's Informations</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Flight No.:
+            </th>
+            <th class="th">
+              Source:
+            </th>
+            <th class="th">
+              Destination:
+            </th>
+            <th class="th">
+              Departure time:
+            </th >
+            <th class="th">
+              Arrival time:
+            </th>
+            <th class="th">
+              Journey date:
+            </th>
+            <th class="th">
+              Duration:
+            </th>
+            <th class="th">
+              Economy class cost:
+            </th>
+            <th class="th">
+              Business class cost:
+            </th>
+            <th class="th">
+              Update Flight
+            </th>
+            <th class="th">
+              Delete Flight
+            </th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let f of flight">
+          <tr>
+            <td class="td">
+              {{f.flightId}}
+            </td>
+            <td class="td">
+              {{f.source}}
+            </td>
+            <td class="td">
+              {{f.destination}}
+            </td>
+            <td class="td">
+              {{f.departure}}
+            </td>
+            <td class="td">
+              {{f.arrival}}<br>
+            </td>
+            <td class="td">
+              {{f.journeyDate}}<br>
+            </td>
+            <td class="td">
+              {{f.duration}}<br>
+            </td>
+            <td class="td">
+              {{f.economyClassCost}} €<br>
+            </td>
+            <td class="td">
+              {{f.businessClassCost}} €<br>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-primary" (click)="updateFlight(f.flightId)">Update</button>
+            </td>
+            <td class="td">
+              <button type="button" class="btn btn-danger" (click)="delete(f.flightId)">Delete</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

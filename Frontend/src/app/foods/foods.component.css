@@ -1,0 +1,161 @@
+.wrapper
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('src/assets/headernew.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4834d4;
+}
+
+.menu
+{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 500vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Heading>h1
+{
+  padding: 2rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.titleheader
+{
+  padding:1rem 2rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.titleheader>h3
+{
+  margin: 0;
+}
+
+
+@keyframes move {
+  40% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 70%;
+    opacity: 0;
+  }
+}
+
+.feedbacks{
+  background-color: floralwhite;
+}
+
+
+/* */
+
+@media print {
+  app-loggedinheader, app-footer,.bg,.btn,.userdashboard {
+    visibility: hidden;
+  }
+  .page {
+    visibility: visible;
+  }
+  .page {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+.head_logo{
+  width: 6rem;
+  height: 6rem;
+  padding:10px;
+}
+
+.bg{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page {
+  font-family: 'Poppins'  !important;
+  max-width: 90%;
+  min-width: 800px;
+  padding: 30px;
+  margin-bottom: 50px;
+
+  border-radius: 0.3em;
+  background-color: #f2f2f2 !important;
+}
+h2{
+  color: white !important;
+}
+
+
+.sub_head
+{
+  font-family: 'Poppins'  !important;
+  margin-top:0px;
+  margin-bottom: 10px;
+  background-color: #5c4dbf;
+  color: white !important;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn
+{
+  position: center;
+  margin-top:10px;
+  color:rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width:120px;
+  font-weight:500;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+.table
+{
+  width:100%;
+  text-align: center;
+  border:none;
+
+  border-collapse: collapse;
+}
+
+.td,.th
+{
+  padding:10px;
+  border:none;
+  border-collapse: collapse;
+  width:10%;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+.th
+{
+  background-color: rgb(132, 164, 194);
+}
+tr:nth-child(even)
+{
+  background-color: rgb(226, 219, 219);
+}

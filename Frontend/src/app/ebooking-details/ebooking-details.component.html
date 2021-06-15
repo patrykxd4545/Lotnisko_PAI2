@@ -1,0 +1,172 @@
+<div class="wrapper">
+
+
+  <div class="menu">
+    <div class="Heading">
+      <h1>Display Booking Details:</h1>
+    </div>
+
+    <div class="page">
+      <div class="heading">
+        <img class="head_logo" src="../assets/logo.png" alt="Błąd"><h2 class="eticket">E-Ticket</h2>
+
+
+      </div>
+      <div class="book_head">
+       <span class="bookdate">Booking Date: {{fetchTicket.journeyDate | date : 'longDate'}}</span>
+
+      </div>
+      <div>
+        <h3 class="sub_head">Travel Information</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Flight Number
+            </th>
+            <th class="th">
+              Ticket Booking Id
+            </th>
+            <th class="th">
+              From
+            </th>
+            <th class="th">
+              To
+            </th >
+            <th class="th">
+              Departure
+            </th>
+            <th class="th">
+              Arrival
+            </th>
+            <th class="th">
+              Travel Class
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="td">
+              {{fetchTicket.flightId}}
+            </td>
+            <td class="td">
+              {{fetchTicket.bookingId}}
+            </td>
+            <td class="td">
+              {{fetchTicket.source}}
+            </td>
+            <td class="td">
+              {{fetchTicket.destination}}
+            </td>
+            <td class="td">
+              {{fetchTicket.departureTime}}<br>
+            </td>
+            <td class="td">
+              {{fetchTicket.arrivalTime}}<br>
+            </td>
+            <td class="td">
+              {{fetchTicket.travelClass}}<br>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h3 class="sub_head">Passenger Information</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Passenger Name
+            </th>
+            <th class="th">
+              Gender
+            </th>
+            <th class="th">
+              Age
+            </th>
+            <th class="th">
+              Booking Status
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let p of fetchTicket.passengerList" style="height: 50px;">
+            <td class="td">
+              {{p.fName}} {{p.lName}}
+            </td >
+            <td class="td">
+              {{p.gender}}
+            </td>
+            <td class="td">
+              {{p.age}}
+            </td>
+            <td class="td">
+              {{p.bookingStatus}}
+            </td>
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h3 class="sub_head">Cost information</h3>
+        <table class="table">
+          <thead>
+          <tr>
+            <th class="th">
+              Ticket price:
+            </th>
+            <th class="th">
+              ...
+            </th>
+            <th class="th">
+              ...
+            </th>
+            <th class="th">
+              ...
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="td">
+              {{fetchTicket.cost}} €<br>
+            </td >
+            <td class="td">
+
+            </td>
+            <td class="td">
+
+            </td>
+            <td class="td">
+
+            </td>
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align: center;">
+        <div>
+          <button class="btn" onclick="window.print()"><i class="fa fa-print"></i>Print</button>
+        </div>
+        <div class="userdashboard">
+          <button class="btn" (click)="list()">Go Back <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+<app-footer></app-footer>

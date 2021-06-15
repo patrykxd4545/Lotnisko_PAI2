@@ -1,0 +1,66 @@
+<div class="wrapper">
+
+  <app-sidebar></app-sidebar>
+  <div class="menu">
+    <div class="Heading">
+      <h1>Update Flight</h1>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+
+        <div class="col-md-6 form-group">
+          <label for="name">Source:</label>
+          <input type="text" class="form-control" id="source" required [(ngModel)]="flight.source" name="source">
+        </div>
+
+        <div class="col-md-6 form-group">
+          <label for="name">Destination</label>
+          <input type="text" class="form-control" id="destination" required [(ngModel)]="flight.destination" name="destination">
+        </div>
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-md-6 form-group">
+          <label for="name">Departure-Time:</label>
+          <input type="time" class="form-control" id="departure" required [(ngModel)]="flight.departure" name="departure">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="name">Arrival-Time:</label>
+          <input type="text" class="form-control" id="arrival" required [(ngModel)]="flight.arrival" name="arrival">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12 form-group">
+          <label for="cycles">Journey Date:</label>
+          <input type="text" class="form-control" id="journeyDate" required [(ngModel)]="flight.journeyDate" name="journeyDate">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 form-group">
+          <label for="name">Economy Class Cost:</label>
+          <input type="text" class="form-control" id="economyClassCost" required [(ngModel)]="flight.economyClassCost" name="economyClassCost">
+        </div>
+        <div class="col-md-6 form-group">
+          <label for="name">Business Class Cost:</label>
+          <input type="text" class="form-control" id="businessClassCost" required [(ngModel)]="flight.businessClassCost" name="businessClassCost">
+        </div>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,57 @@
+<div class="dashboard--menu-wrapper">
+  <div class="left dashboard--menu">
+    <div class="section" *ngIf="showUserBoard">
+      <a [routerLink]="['/user']"> <i class="fa fa-calendar ico"></i> User Dashboard</a>
+    </div>
+    <div class="section" *ngIf="showUserBoard">
+        <a [routerLink]="['/user/addFeedback']"> <i class="fa fa-handshake-o"></i> Add Feedback</a>
+    </div>
+    <div class="section" *ngIf="showAdminBoard">
+      <a [routerLink]="['/admin/displayFeedbacks']"> <i class="fa fa-tasks"></i> Display Feedbacks</a>
+    </div>
+    <div class="section" *ngIf="showAdminBoard">
+      <a [routerLink]="['/admin/displayUsers']"> <i class="fa fa-tasks"></i> Display Users</a>
+    </div>
+    <div class="section" *ngIf="showModeratorBoard">
+      <a [routerLink]="['/mod/addFlight']"> <i class="fa fa-plane"></i> Add Flight</a>
+    </div>
+    <div class="section" *ngIf="showModeratorBoard">
+      <a [routerLink]="['/mod/displayAllFlights']"> <i class="fa fa-map"></i> Display All Flights</a>
+    </div>
+    <div class="section" *ngIf="showUserBoard">
+      <a [routerLink]="['/user/searchFlights']"> <i class="fa fa-search"></i> Search Flights</a>
+    </div>
+    <div class="section" *ngIf="showUserBoard">
+      <a [routerLink]="['/user/bookFlight']"> <i class="fa fa-plus-circle"></i> Book Flights</a>
+    </div>
+    <div class="section" *ngIf="showModeratorBoard">
+      <a [routerLink]="['/admin/displayBookings']"> <i class="fa fa-plus-circle"></i> Display Bookings</a>
+    </div>
+    <div class="section" *ngIf="showUserBoard">
+      <a [routerLink]="['/user/bookEticket']"> <i class="fa fa-plug"></i> Book Eticket</a>
+    </div>
+    <div class="section" *ngIf="showAdminBoard">
+      <a [routerLink]="['/admin/ebookingList']"> <i class="fa fa-plug"></i> Ebooking List</a>
+    </div>
+    <div class="section" *ngIf="showAdminBoard">
+      <a [routerLink]="['/admin/addPlane']"> <i class="fa fa-plane"></i> Add Plane</a>
+    </div>
+    <div class="section" *ngIf="showAdminBoard">
+      <a [routerLink]="['/admin/planes']"> <i class="fa fa-plane"></i> Planes list</a>
+    </div>
+    <div  class="section" *ngIf="showUserBoard">
+      <a  [routerLink]="['/user/bookFlight/pay']"> <i class="fa fa-money"></i> Payments</a>
+    </div>
+    <div class="section" *ngIf="showCrewBoard">
+      <a [routerLink]="['/user/foods']"> <i class="fa fa-money"></i> Foods</a>
+    </div>
+    <div class="section" *ngIf="showUserBoard">
+      <a [routerLink]="['/user/shop']"> <i class="fa fa-money"></i> Buy Food</a>
+    </div>
+
+
+
+
+
+  </div>
+</div>

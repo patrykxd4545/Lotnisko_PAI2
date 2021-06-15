@@ -1,0 +1,21 @@
+
+      <h1>{{food.id == null ? 'Add' : 'Edit'}} Food - {{food.id}}</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Food Name" [(ngModel)]="food.name" name="name">
+
+        <label for="author">Description:</label>
+        <input type="text" class="form-control" id="author" placeholder="description" name="author" [(ngModel)]="food.description">
+
+        <label for="author">Price:</label>
+        <input type="text" class="form-control" id="price" placeholder="price" name="price" [(ngModel)]="food.price">
+
+        <div class="form-group" *ngIf="food.id == null">
+          <br>
+          <input type="file" (change)="onFileChanged($event)">
+          <img [src]="imgURL" height="200" width="200" *ngIf="imgURL">
+        </div>
+        <br>
+        <button type="button" class="btn btn-success" (click)="saveFood()">Save Food</button>
+      </form>
+
